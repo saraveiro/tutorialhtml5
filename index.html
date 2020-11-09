@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tutorial HTML 5</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+        <section id="logo">
+            <img src="HTML5.png" alt="Logo de HTML">
+        </section>
+        <section id="cabecera">   
+        <h1 id="titulo">Tutorial HTML 5</h1>
+        <nav id="firstmenu" role="menú principal">
+            <ul>
+                <li class="pagina_actual"><a href="index.html" aria-label="Página de inicio">INICIO</a></li>
+                <li>SEMÁNTICA</li>
+                <li>LISTAS</li>
+                <li>FORMULARIOS</li>
+                <li>IMÁGENES</li>
+            </ul>
+        </nav>
+        </section>
+    </header>
+    <main>
+        <section id="secondmenu" role="menú lateral">
+            <nav>
+                <ul>
+                    <li><a href="#quees" aria-label="¿Qué es HTML?">¿Qué es HTML?</a></li>
+                    <li><a href="#historia" aria-label="Historia del HTML">Historia del HTML</a></li>
+                    <li><a href="#estructura" aria-label="La estructura del HTML">La estructura del HTML</a></li>
+                </ul> 
+            </nav>
+        </section>
+        
+        <section id="content" role="contenido principal">
+            <article class ="article">
+                <a id="quees"><h2>¿Qué es HTML?</h2></a>
+                <p>HTML hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros.</p>
+            </article>
+            <article class ="article">
+                <a id="historia"><h2>Historia del HTML</h2></a>
+                <p>El origen del lenguaje HTML se remonta al físico Tim Berners-Lee, quien a finales de 1989 propuso el lenguaje HTML junto con el protocolo HTTP, cuya finalidad era crear un medio para poder compartir información entre diversos «grandes» físicos de la época que trabajaban por todo el mundo. 
+                    El primer documento sobre la estructura del HTML se publicó en el año de 1991 con el nombre de: «HTML Tags», en él se explicaban las etiquetas del HTML. 
+                    El primero en salir fue el HTML 1, sin embargo no fue considerado un estándar, por lo que muchas veces se considera al HTML 2 como la primera versión del HTML. 
+                    El HTML 2 fue presentado en el 1995; no soportaba tablas y la declaración explícita de los elementos body, html y head era opcional. 
+                    La versión HTML 3.2 se lanzó en el 1997 e incorporó los últimos avances de las páginas web como applets de Java y texto que fluye alrededor de las imágenes. 
+                    La versión 4.0 fue lanzada en 1998. Entre sus novedades más destacadas se encuentran las hojas de estilos CSS, la posibilidad de incluir pequeños programas o scripts en las páginas web, mejora de la accesibilidad de las páginas diseñadas, tablas complejas y mejoras en los formularios.
+                    La 4.01 salió a la luz en 1999 como una revisión y actualización de la versión HTML 4.0, por lo que no incluye novedades significativas. 
+                    Por último, el HTML 5, en del que veremos la estructura en el siguiente apartado. 
+                 </p>
+                 <img id="evolucion" src="d0c354715d063841fd1010d7d68eeb43.png" alt="Imagen que muestra la evolución del HTML En 1991 aparece HTML. En 1994 aparece HTML 2. 
+                 En 1996 se añade CSS1 y Javascript. En 1997 aparece HTML 4. En 1998 aparece CSS 2. En el 2000 aparece XHTML 1. En 2002 aparece el Diseño Web 
+                 sin tablas. En 2005 aparece AJAX y en 2009 aparece HTML 5">
+            </article>
+            <article class ="article">
+                <a id="estructura"><h2>La estructura del HTML</h2></a>
+                <p>Una posible estructura básica sería la siguientes (posible porque no son obligatorias todas estas etiquetas.)</p>
+                <p class="a">&lt;!DOCTYPE html&gt;</p>
+                <p class="a">&lt;html lang="es"&gt;</p>
+                <p class="b">&lt;head&gt;</p>
+                <p class="c">&lt;meta charset="utf-8"&sol;&gt;</p>
+                <p class="c">&lt;title&gt;Hola Mundo!&lt;&sol;title&gt;</p>
+                <p class="b">&lt;&sol;head&gt;</p>
+                <p class="b">&lt;body&gt;</p>
+                <p class="c">&lt;header&gt;</p> 
+                <p class="c">&lt;&sol;header&gt;</p>
+                <p class="c">&lt;main&gt;</p> 
+                <p class="d">&lt;section&gt;</p> 
+                <p class="e">&lt;article&gt;</p> 
+                <p class="e">&lt;&sol;article&gt;</p>
+                <p class="d">&lt;&sol;section&gt;</p>
+                <p class="d">&lt;aside&gt;</p> 
+                <p class="d">&lt;&sol;aside&gt;</p>
+                <p class="c">&lt;&sol;main&gt;</p>
+                <p class="b">&lt;&sol;body&gt;</p>
+                <p class="b">&lt;footer&gt;</p>
+                <p class="b">&lt;&sol;footer&gt;</p>
+                <p class="a">&lt;&sol;html&gt;</p>
+                <p class="f">La primera etiqueta, &lt;!DOCTYPE html&gt;, declara el tipo de documento que se va a mostrar, que será un documento html.
+                La segunda &lt;!DOCTYPE html&gt;, indica la lengua del documento, en este caso, español. La tercera etiqueta es &lt;head&gt;
+                que indica que se abre la cabecera, donde se situan los metadatos del documento, las hojas de estilo y el código Javascript; 
+                dentro de esta esta la etiqueta se encuantra otra etiqueta, &lt;meta charset="utf-8"&sol;&gt;, que es obligatoria en HTML 5
+                e indica el formato de codificación de caracteres, esta se cierra en la misma etiqueta que se abre. Dentro de la cabecera 
+                también se incluye el título de la página dentro de la etiqueta &lt;title&gt; y después se cierra con &lt;&sol;head&gt;. 
+                Ahora abrimos el cuerpo de la página con la etiqueta &lt;body&gt;; aquí se situará el contenido de la página, que incluirá 
+                un header (&lt;header&gt; y &lt;&sol;header&gt;), con el logo y el título, por ejemplo; y el contenido principal 
+                podría aparecer dentro de etiquetas main (&lt;main&gt; &lt;&sol;main&gt;) dividido en secciones (&lt;section&gt; &lt;&sol;section&gt;),
+                artículos (&lt;article&gt; &lt;&sol;article&gt;), barras laterales (&lt;aside&gt; &lt;&sol;aside&gt;), etc. Por último cabe 
+                decir que los menús se incluirían entre etiquetas &lt;nav&gt; y &lt;&sol;nav&gt;y que la página la cerrará un pie de página 
+                que se enmarcará dentro de las etiquetas &lt;footer&gt; y &lt;&sol;footer&gt; después de haber cerrado el cuerpo con &lt;&sol;body&gt;. 
+                En este momento, se cierran la etiqueta del principio que indicaba que este documento es html con &lt;&sol;html&gt;.
+                
+            </article>
+        </section>
+
+            <section id="thirdmenu" role="enlaces">
+                <section id="buscar" role="buscar">
+                    <form>
+                        <input type="text" aria-label="texto">
+                        <input type="submit" aria-label="Buscar" value="Buscar">
+                    </form>
+                </section>
+                <h2>Enlaces a vídeo tutoriales</h2>
+                <p><a href="https://www.w3schools.com/css/">Tutorial W3S</a></p>
+                <h2>Enlaces a páginas consulta</h2>
+                <p><a href="https://www.ciudadano2cero.com/aprender-css-basico-desde-cero/">Guía rápida</a></p>
+            </section>
+    </main>
+    <span class="ir-arriba"><a href="index.html">IR ARRIBA</a>></span>
+
+        <footer>
+            <p>©Todos los derechos reservados. Realizado por Sara Martínez Veiro</p>
+        </footer>
+
+    </body>
+</html>
