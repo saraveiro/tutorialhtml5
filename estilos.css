@@ -1,5 +1,5 @@
 body {
-    width: 1000px;
+   /* width: 1000px;*/
 	margin: 20px 0px 0px 0px;
 	padding: 0;
 	background: #FFFFFF;
@@ -33,17 +33,22 @@ p, ul, ol {
 
 
 
-
+/*
 header{
     width: 100%;
     width: 1400px;
-}
+}*/
 
 #logo{
-    width: 15%;
+    /*width: 15%; o uno o el otro */
     width: 150px;
     float: left;
+    /* te falta  para que no nos separe la imagen del borde*/
+	margin: 0;
+	padding: 0;
 }
+
+/* Cabecera */
 
 #cabecera{
     width: 85%;
@@ -53,21 +58,29 @@ header{
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 20px;
-    margin-left: auto;    
+    margin-left: auto;  
+    /* se puede poner con margin todos los margenes 
+    	margin: 0px auto 20px auto;
+
+    */  
 }
 
 #titulo{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #0C0C0C;
-    width: 20%;
-    width: 300px;
+    /*width: 20%; es 30%*/
+    width: 30%;
+/* o un ancho en px o en % no se pueden poner las dos
+    width: 300px; */
     float: left;
     padding-top: 13px;
 }
 
+/* Menu */
+
 #firstmenu{
-    text-decoration: none;
+  /*  text-decoration: none;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
@@ -79,15 +92,41 @@ header{
     padding-top: 13px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 37px;  
+    height: 37px;  */
+	float: right;
+	width: 700px;
 }
-
-#firstmenu .pagina_actual{
+/* falta todo esto */
+/* para la lista eliminar los márgenes y padding y quitar la viñeta con list-style:none*/
+#firstmenu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+/* posiciona cada li a la izquierda */
+#firstmenu li {
+	float: left;
+}
+/* para cada enlace del menú, trabajar como si fueran todos un bloque, posicionados a la izquierda.*/
+#firstmenu a {
+	display: block;
+	float: left;
+	height: 37px;
+	padding: 13px 30px 0px 30px;
+	text-decoration: none; /* quitamos el subrayado por defecto de los enlaces*/
+	text-transform: uppercase; /*hacemos que todas las letras estén en mayúsculas */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+    color: #0C0C0C;
+}
+#firstmenu .pagina_actual a{
 	background: #EB1D1D;
 	text-decoration: none;
 	color: #FFFFFF;
 }
-#firstmenu .pagina_actual{
+
+/*#firstmenu .pagina_actual{
 	color: #FFFFFF;
 }
 
@@ -95,19 +134,16 @@ header{
     float: left;
     margin: 10px;
 list-style: none;
-}
-
-
-
-
+}*/
 
 main{
     width: 90%;
-    width: 1000px;
+  /*  width: 1000px; */
     margin-top: 100px;
     margin-left: 70px;
     margin-bottom: 20px;
 }
+
 #secondmenu {
     text-decoration: none;
     color: #0C0C0C;
@@ -126,12 +162,18 @@ main{
 
 #content{
     width: 50%;
-    width: 500px;
+  /*  width: 500px;*/
     float: left;
-    text-align: justify;
-    position: relative;
-    right: 20px;
+  /*  text-align: justify; no aconsejan justificar el texto*/
+  /*  position: relative; no se usa si ya estamos empleando float*/
+  /*  right: 20px; no se usa con float, se usa con position*/
+	width: 50%;
+/* para poder fijar el menú lateral - Ejercicio 2 variación de este
+	margin-left: 20%; */
+	padding: 0px 0px 0px 0px;
+    background: #FFFFFF;
 }
+
 .article{
     margin: 30px;
     border-bottom: 1px solid #BBBBBB;;
@@ -210,12 +252,15 @@ main{
 
 
 footer{
+    clear: both; /*para eliminar cualquier posicionamiento anterior que pueda afectar a este bloque */
     width: 60%;
     max-width: 1000px;
     height: 50px;
-    margin: auto;
+/*    margin: auto;*/
+    margin: 0 auto; /*para alinear el contenedor al centro de la página se usa margin: 0 auto */
     text-align: center;
-    margin-top: 700px;
+/*    margin-top: 700px;*/
     border-top: 1px solid #BBBBBB;
 	font-family: Arial, Helvetica, sans-serif;
 }
+	
